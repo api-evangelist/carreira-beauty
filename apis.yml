@@ -1,7 +1,29 @@
 aid: carreira-beauty
+accessModel:
+  pricing: unknown
+  onboarding: open
+  trial: false
+  try_now: false
+  public: true
+  label: Open access
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/carreira-beauty.png
 name: Carreira Beauty
-description: Carreira Beauty is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Carreira Beauty (carreirabeauty.com) is a Brazilian online job marketplace connecting
+  beauty, aesthetics, and wellness professionals with employment and freelance opportunities.
+  The platform operates as a two-sided network that lets professionals — manicurists,
+  hairdressers, estheticians, makeup artists, barbers, masotherapists, eyebrow designers,
+  and salon receptionists — create a free professional profile and discover nearby openings,
+  while salons, aesthetic clinics, spas, and studios post jobs and freelance ("freelas")
+  shifts. It offers geographic filtering to match professionals with local roles, direct
+  employer-to-professional communication over WhatsApp, and one free job posting per business
+  with no credit card required. It is a portfolio company of 500 Global. Carreira Beauty is a
+  consumer web application and does not currently publish a public developer API, SDKs, or
+  API documentation.
 url: https://raw.githubusercontent.com/api-evangelist/carreira-beauty/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Beauty
+- Wellness
+- Aesthetics
+- Jobs
+- Employment
+- Marketplace
+- Brazil
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,18 @@ maintainers:
 common:
 - type: Website
   url: https://carreirabeauty.com
+- type: Login
+  url: https://carreirabeauty.com/login
+- type: HelpCenter
+  url: https://carreirabeauty.com/perguntas-frequentes
+- type: TermsOfService
+  url: https://carreirabeauty.com/termos
+- type: PrivacyPolicy
+  url: https://carreirabeauty.com/privacidade
+- type: DomainSecurity
+  url: security/carreira-beauty-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
